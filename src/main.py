@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.client.openAI_client import OpenAIClient
 from src.utils.Excel import ExcelOperation
 from src.utils.Image import ImageGeneration
@@ -5,6 +10,7 @@ from src.utils.Image import ImageGeneration
 if __name__ == '__main__':
     print("---------------------------------------------------------------------------------")
     print("|                  Welcome to 'Generating Image with AI' project :)             |")
+    print("| Author : Alexis EGEA                                                          |")
     print("---------------------------------------------------------------------------------")
     print("\nTo use this project, you need an API key from OpenAI."
           "\nIf you don't have one, you can obtain it at https://platform.openai.com/api-keys")
