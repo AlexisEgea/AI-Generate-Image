@@ -46,11 +46,15 @@ git clone https://github.com/AlexisEgea/AI-Generate-Image.git
 2. Installing the prerequisites
 ```sh
 chmod +x installation-requirements.sh
+```
+```sh
 ./installation-requirements.sh
 ```
 3. Run the project
 ```sh
 chmod +x AI-Generate-Image.sh
+```
+```sh
 ./AI-Generate-Image.sh
 ```
 
