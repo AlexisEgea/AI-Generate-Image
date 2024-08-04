@@ -68,13 +68,12 @@ if __name__ == '__main__':
             print(url_image)
 
             print("waiting to display the image...")
-            file_name = "image"
             excel = ExcelOperation()
             image = ImageGeneration(url_image)
             image.display_image()
             image.save_image(f"image_{excel.sheet.max_row}")
             print("saving history...")
-            excel.add_new_image(prompt, file_name)
+            excel.add_new_image(prompt)
             excel.save_file()
 
         message_to_continue = input("Would you like to try again? (yes or no): ")
