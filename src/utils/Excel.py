@@ -9,11 +9,11 @@ class ExcelOperation:
         self.workbook = openpyxl.load_workbook(self.file_path)
         self.sheet = self.workbook["history"]
 
-    def add_new_image(self, prompt, name_image):
+    def add_new_image(self, prompt):
         print("Adding new image in history excel file...")
         new_line_size = self.sheet.max_row
         self.sheet['A' + str(new_line_size + 1)] = prompt
-        self.sheet['B' + str(new_line_size + 1)] = name_image + "_" + str(new_line_size)
+        self.sheet['B' + str(new_line_size + 1)] = "image_" + str(new_line_size)
         print("New image information added")
 
     def save_file(self):
