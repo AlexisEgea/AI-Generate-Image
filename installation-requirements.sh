@@ -19,3 +19,6 @@ echo "__________________________________________________________________________
 echo "installation requirement.txt"
 pip install -r requirement.txt
 echo "Done, project ready to be executed"
+
+echo 
+read -p "Press any key to close the terminal window"
