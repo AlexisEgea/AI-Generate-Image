@@ -9,3 +9,6 @@
 cd src/
 python3 -m main
 cd ..
+
+echo 
+read -p "Press any key to close the terminal window"
