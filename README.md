@@ -33,7 +33,7 @@ Follow the project instructions and have fun :)
 
 ### On Ubuntu:
 
-To execute a .sh Script:  
+To execute a `.sh` Script:  
    1. Open a terminal.  
    2. Run the command `chmod +x script_name.sh` to make the script executable.  
    3. Execute the script by running `./script_name.sh`.  
@@ -46,22 +46,34 @@ git clone https://github.com/AlexisEgea/AI-Generate-Image.git
 2. Installing the prerequisites
 ```sh
 chmod +x installation-requirements.sh
-```
-```sh
 ./installation-requirements.sh
 ```
 3. Run the project
 ```sh
 chmod +x AI-Generate-Image.sh
-```
-```sh
 ./AI-Generate-Image.sh
 ```
 
 ### On Windows:
 
-Double-click on the `.sh` files and wait for the project to start.
 
+Double-click on the `installation-requirements.sh` script, preferably with `Git Bash`, to install the prerequisites:"
+```
+installation-requirements.sh
+```
+
+Double-click on the `AI-Generate-Image.sh` script, preferably with `Git Bash`, to run the project:
+```
+AI-Generate-Image.sh
+```
+The `AI-Generate-Image.sh` script will return an error because of the executed Python command if you use `python ...` to execute a Python command. Please replace this line of code:
+```sh
+python3 -m main
+```
+with this one 
+```sh
+python -m main
+```
 Note that the current version of the project has been tested on Linux. If you encounter difficulties running the project, feel free to use an IDE (PyCharm, VS Code, or another), create a `venv` environment with the `requirements.txt` file, and execute the `main.py` file.
 
 ## Contact Information
