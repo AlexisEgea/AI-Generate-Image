@@ -69,7 +69,7 @@ Double-click on the `AI-Generate-Image.sh` script, preferably with `Git Bash`, t
 ```
 AI-Generate-Image.sh
 ```
-The scripts will return an error because of the executed Python command if you use `python ...` to execute a Python command. Please replace `python3` by `python`  
+The scripts will return an error if you use `python ...` to execute a Python command. Please replace `python3` by `python` and try again.  
 Note that the current version of the project has been tested on Linux. If you encounter difficulties running the project, feel free to use an IDE (PyCharm, VS Code, or another), create a `venv` environment with the `requirements.txt` file, and execute the `main.py` file.
 
 ## Contact Information
