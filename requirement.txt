@@ -2,3 +2,6 @@ openai
 openpyxl
 Pillow
 requests
+
+customtkinter
+CTkMessagebox
