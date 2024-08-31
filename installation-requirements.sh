@@ -6,14 +6,29 @@ echo "|                          Installation Requirements                      
 echo "| Author : Alexis EGEA                                                      |"
 echo "-----------------------------------------------------------------------------"
 
+echo "OS detected $OSTYPE"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	PYTHON_CMD=python3
+elif [[ "$OSTYPE" == "cygwin"* ]]; then
+ 	PYTHON_CMD=python3
+else
+	echo "Unsupported OS '$OSTYPE'"
+	exit 1
+fi
+
 echo "_____________________________________________________________________________"
 echo "creation venv repository..."
-python3 -m venv venv
+$PYTHON_CMD -m venv venv
 echo "...done"
 echo "_____________________________________________________________________________"
 echo "activation venv..."
-source venv/bin/activate #for linux
-#venv\Scripts\activate #for window
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	source venv/bin/activate
+elif [[ "$OSTYPE" == "cygwin"* ]]; then
+ 	venv\Scripts\activate
+fi
+
 echo "...done"
 echo "_____________________________________________________________________________"
 echo "installation requirement.txt"
