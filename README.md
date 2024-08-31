@@ -60,7 +60,7 @@ chmod +x AI-Generate-Image.sh
 
 ### On Windows:
 
-Double-click on the `installation-requirements.sh` script, preferably with `Git Bash`, to install the prerequisites:"
+Double-click on the `installation-requirements.sh` script, preferably with `Git Bash`, to install the prerequisites:
 ```
 installation-requirements.sh
 ```
