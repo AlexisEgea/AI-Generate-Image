@@ -9,7 +9,7 @@
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	PYTHON_CMD=python3
 elif [[ "$OSTYPE" == "cygwin"* || "$OSTYPE" == "msys"* ]]; then
- 	PYTHON_CMD=python3
+ 	PYTHON_CMD=python
 else
 	echo "Unsupported OS '$OSTYPE'"
 	exit 1
