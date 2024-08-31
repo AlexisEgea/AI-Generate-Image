@@ -71,7 +71,7 @@ AI-Generate-Image.sh
 ```
 ---
 
-Note that the current version of the project has been tested on both Linux and Windows on the same machine. If you encounter difficulties running the project, feel free to use an IDE (PyCharm, VS Code, or another), create a `venv` environment with the `requirements.txt` file, and execute the `main.py` file.
+Note that the current version of the project has been tested on both Linux and Windows. If you encounter difficulties running the project, feel free to use an IDE (PyCharm, VS Code, or another), create a `venv` environment with the `requirements.txt` file, and execute the `main.py` file.
 
 ## Contact Information
 
